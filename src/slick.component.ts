@@ -167,7 +167,7 @@ export class SlickComponent implements AfterViewInit, OnDestroy {
     selector: '[ngxSlickItem]',
 })
 export class SlickItemDirective implements AfterViewInit, OnDestroy {
-    constructor(public el: ElementRef, @Host() private carousel: SlickComponent) {
+    constructor(@Host() private carousel: SlickComponent) {
     }
 
     ngAfterViewInit() {
